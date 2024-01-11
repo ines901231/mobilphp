@@ -3,7 +3,7 @@ mobil php backup//update
 
 /note/
 addlist:
--sortir grid/list view					                       -booking
+-sortir grid/list view					                       -booking <br>
 -tambahin AMG ONE					                            -database
 -filter classic, retro, modern&berdasarkan top brand	-booking
 -bawa feedback ke landing page(?)			                -landing2
