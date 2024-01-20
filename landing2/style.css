@@ -161,7 +161,10 @@ body {
     font-size: 1.1em;
     margin-left: 5%;
     margin-right: 5%;
+}
 
+.showcase .jajargenjang2 {
+    display: none;
 }
   
 .container .content:hover {
@@ -417,13 +420,6 @@ body {
     transform: translateY(0);
 }
 
-/* doesnt work */
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
-
 @media only screen and (min-width: 768px) {
 
     .big {
@@ -528,7 +524,7 @@ body {
         position: absolute;
         z-index: -1;
         height: 800px;
-        margin-left: 26%;
+        margin-left: 126%;
     }
     
     .showcase .jajargenjang {
@@ -554,7 +550,18 @@ body {
         font-size: 1.7em;
         margin-left: 5%;
         margin-right: 5%;
-    
+    }
+
+    .showcase .jajargenjang2 {
+        display: flex;
+        position: absolute;
+        background-color: #080404;
+        z-index: 1;
+        width: 50%;
+        height: 800px;
+        transform: skewX(-10deg);
+        right: -600px;
+        top: 2100px;
     }
       
     .container .content:hover {
@@ -884,8 +891,8 @@ body {
     .btn {
         align-content: center;
         color: #fff;
+        height: 13.9%;
         margin-top: 15%;
-        padding: 20px;
         background-color: #080404;
         font-size: xx-large;
         border: none;
@@ -922,6 +929,64 @@ body {
     }
     
     .btn:hover::before {
+        width: 100%;
+    }
+
+    .log {
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+        height: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 30px;
+    }
+    
+    .log .btn2 a {
+        color: #000;
+    }
+    
+    .log .btn2 {
+        align-items: center;
+        width: 100%;
+        color: #080404;
+        background-color: #fff;
+        font-size: x-large;
+        border: none;
+        cursor: pointer;
+        border: 3px solid #fff;
+        transition: all 0.4s ease;
+    }
+    
+    .log .btn2:hover {
+        background-color: #fff;
+        transition: .2s;
+        border: 3px solid #fff;
+    }
+    
+    .log .btn2:hover {
+        background-color: #080404;
+        color: #fff;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 0.2s ease;
+    }
+    
+    .log .btn2::before {
+        content: '';
+        width: 0;
+        height: 44px;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #f8502e 0%, #f8502e 100%);
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+    }
+    
+    .log .btn2:hover::before {
         width: 100%;
     }
 
@@ -970,5 +1035,12 @@ body {
         border-bottom: 150px solid transparent;
         height: 130px;
         visibility: hidden;
+    }
+}
+
+/* doesnt work */
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
     }
 }
