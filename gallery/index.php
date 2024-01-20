@@ -26,7 +26,7 @@ if(!isset($_SESSION["login"])) {
         <a href="../landing2/index.html"><img class="forza" src="forza.png" alt=""></a>
         <ul>
             <li><a href="../booking/index.php">Book a Car</a></li>
-            <li><a class="main" href="../gallery/index.php">Gallery</a></li>
+            <li><a href="../gallery/index.php">Gallery</a></li>
             <li><a href="../payment/index.php">Pricing</a></li>
             <li><a href="../contact/index.php">Feedback</a></li>
         </ul>

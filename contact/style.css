@@ -40,6 +40,38 @@ body {
     margin: 0 5px;
 }
 
+.header ul li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 10px;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.header ul li:last-child {
+    margin-right: 0;
+}
+  
+.header ul li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    top: 57px;
+    background: transparent;
+    transition: width .3s ease, background-color .5s ease;
+}
+
+.header ul li:hover:after {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 57px;
+}
+
 .header ul li a {
     color: #fff;
     font-size: 17px;
@@ -50,10 +82,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.header ul li a:hover {
+/* .header ul li a:hover {
     transition: .3s;
     border-bottom: 1px solid #fff;
-}
+} */
 
 a.main {
     border-bottom: 1px solid #fff;

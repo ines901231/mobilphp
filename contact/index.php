@@ -28,7 +28,7 @@ if(!isset($_SESSION["login"])) {
             <li><a href="../booking/index.php">Book a Car</a></li>
             <li><a href="../gallery/index.php">Gallery</a></li>
             <li><a href="../payment/index.php">Pricing</a></li>
-            <li><a class="main" href="../contact/index.php">Feedback</a></li>
+            <li><a href="../contact/index.php">Feedback</a></li>
         </ul>
     </nav>
 
