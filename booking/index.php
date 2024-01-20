@@ -28,7 +28,7 @@ $mobil = query("SELECT * FROM car");
         </label>
         <a href="../landing2/index.html"><img class="forza" src="forza.png" alt=""></a>
         <ul>
-            <li><a class="main" href="../booking/index.php">Book a Car</a></li>
+            <li><a href="../booking/index.php">Book a Car</a></li>
             <li><a href="../gallery/index.php">Gallery</a></li>
             <li><a href="../payment/index.php">Pricing</a></li>
             <li><a href="../contact/index.php">Feedback</a></li>
@@ -96,6 +96,23 @@ $mobil = query("SELECT * FROM car");
             <p>Porsche 911 Carrera S, an iconic sports car, blends timeless design with formidable performance, powered by a potent engine, advanced technology, and precise handling for an exhilarating driving experience.</p>
             <a href="../payment/index.php" target="_blank">BOOK NOW</a>
         </div> -->
+
+    <!-- <script type="text/javascript">
+        var marker = document.querySelector('marker');
+        var item = document.querySelector('nav ul li a');
+
+        function indicator(e) {
+            marker.style.left = e.offsetLeft+"px";
+            marker.style.width = e.offsetWidth+"px";
+        }
+
+        item.foreach(Link => {
+            link.addEventListener('click', (e) => {
+                indicator(e.target);
+            })
+        })
+    </script> -->
+
     </div>
     <div class="kembali">
             <a href="../admin/index.php">here</a>
