@@ -28,7 +28,7 @@ if(isset($_POST["cari"])) {
         <a href="../booking/index.php">Logout</a>
     </div>
     
-    <h1>Daftar mobil</h1>
+    <h1>Data mobil</h1>
     <br>
     <form action="" method="post">
         <input type="text" name="keyword" id="" placeholder="Type here" autofocus autocomplete="off">

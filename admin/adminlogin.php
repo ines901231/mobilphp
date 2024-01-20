@@ -21,7 +21,7 @@ if(isset($_POST["submit"])) {
     <div class="center">
         <h1>Admin Login</h1>
         <?php if(isset($error)) : ?>
-            <p>username/password salah</p>
+            <center><p>username/password salah</p></center>
         <?php endif; ?>
             <form action="" method="post">
                 <div class="field">
