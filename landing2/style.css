@@ -166,6 +166,26 @@ body {
 .showcase .jajargenjang2 {
     display: none;
 }
+
+.showcase .jajargenjang .book button {
+    transform: skewX(10deg);
+    margin-left: 10%;
+    margin-top: 50px;
+    font-size: large;
+    text-decoration: none;
+    color: #fff;
+    background: #f8502e;
+    padding: 20px 50px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    border: none;
+}
+
+.showcase .jajargenjang .book button:hover {
+    box-shadow: 0 5px 15px #f8502e;
+}
   
 .container .content:hover {
     opacity: 1;
@@ -957,6 +977,7 @@ body {
         cursor: pointer;
         border: 3px solid #fff;
         transition: all 0.4s ease;
+        border-radius: 3px;
     }
     
     .log .btn2:hover {
