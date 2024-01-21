@@ -74,6 +74,15 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.header ul li .logot {
+    color: #f8502e;
+    transition: .3s;
+}
+
+.header ul li .logot:hover {
+    background-color: #fff;
+}
+
 /* .header ul li a:hover {
     transition: .3s;
     border-bottom: 1px solid #fff;
