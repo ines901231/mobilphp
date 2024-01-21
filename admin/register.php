@@ -5,6 +5,7 @@ require 'functions.php';
         if (register($_POST) > 0 ) {
             echo "<script> 
                     alert ('Data anda telah didaftarkan!');
+                    window.location.href = 'login.php';
                 </script>";
         }
     }
@@ -18,6 +19,7 @@ require 'functions.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="account.css">
+    <script src="confirm.js"></script>
 </head>
 <body>
     
@@ -34,7 +36,11 @@ require 'functions.php';
                 <span></span>
                 <label for="password">Password</label>
             </div>
-            <div class="forg">Forgot Password?</div>
+            <div class="field">
+                <input type="password" id="confirm_password" required>
+                <span></span>
+                <label for="password">Confirm Password</label>
+            </div>
             <input class="btn" type="submit" name="register" value="Register">
             <div class="signup">
                 Already have account? <a href="login.php">Login</a> here!

@@ -30,14 +30,13 @@ if(isset($_POST["submit"])) {
                     <label for="username">Username</label>
                 </div>
                 <div class="field">
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="confirm_password" required>
                     <span></span>
                     <label for="password">Password</label>
                 </div>
-                <div class="forg">Forgot Password?</div>
                 <input class="btn" type="submit" name="submit" value="Login">
                 <div class="signup">
-                    Already have account? <a href="login.php">Login</a> here!
+
                 </div>
             </form>
     </div>

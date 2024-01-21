@@ -42,7 +42,7 @@ if(isset($_POST["login"])) {
         <h1>Login</h1>
 
         <?php if(isset($error)) : ?>
-            <center><p>username/password salah</p></center>
+            <center><p><i>username/password salah</i></p></center>
         <?php endif; ?>
 
         <form action="" method="post">
